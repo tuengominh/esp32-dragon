@@ -26,8 +26,8 @@ Adafruit_NeoPixel strip(LED_COUNT, RGB_PIN, NEO_GRB + NEO_KHZ800);
 unsigned long now = millis();
 unsigned long lastMeasure = 0;
 
-char* ssid = "TuePixel";
-char* pass = "e70fd27eeaf1Z";
+char* ssid = "";
+char* pass = "";
 
 const char* mqtt_server = "192.168.224.194";
 
