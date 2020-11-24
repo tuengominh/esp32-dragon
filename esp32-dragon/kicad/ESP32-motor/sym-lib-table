@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name fab)(type Legacy)(uri /Applications/KiCad/kicad_libraries/fab.lib)(options "")(descr ""))
+  (lib (name ESP32-main-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP32-main-rescue.lib)(options "")(descr ""))
+)

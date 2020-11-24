@@ -1,0 +1,382 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1000 2000 0    50   Input ~ 0
+DHT
+Text Notes 2500 850  2    50   ~ 0
+MAIN ESP32 HEADER
+Text GLabel 1000 1500 0    50   Input ~ 0
+ECHO
+Text GLabel 1000 1900 0    50   Input ~ 0
+TRIG
+Text GLabel 5600 1900 0    50   Input ~ 0
+R
+Text GLabel 5600 2000 0    50   Input ~ 0
+G
+Text GLabel 5600 2100 0    50   Input ~ 0
+B
+Text GLabel 4100 1700 0    50   Input ~ 0
+GND
+Text GLabel 3000 4550 2    50   Input ~ 0
+GND
+Text GLabel 2150 4450 2    50   Input ~ 0
+ECHO
+Text GLabel 2150 4350 2    50   Input ~ 0
+TRIG
+$Comp
+L fab-new:PINHD-1x04-HEADER J1
+U 1 1 5F0B103D
+P 1350 4050
+F 0 "J1" V 1800 4400 45  0000 L CNN
+F 1 "HRSC04-HEADER" V 1700 4150 45  0000 L CNN
+F 2 "fab:fab-1X04" H 1380 4200 20  0001 C CNN
+F 3 "" H 1350 4050 50  0001 C CNN
+	1    1350 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4350 1350 4350
+Wire Wire Line
+	2150 4450 1350 4450
+Text GLabel 6050 4800 2    50   Input ~ 0
+GND
+Text GLabel 6050 3900 2    50   Input ~ 0
+3V3
+Text GLabel 6050 4500 2    50   Input ~ 0
+DHT
+Text Notes 5550 850  2    50   ~ 0
+RGB LED STRIP 
+Text Notes 2650 3550 2    50   ~ 0
+ULTRASONIC SENSOR MODULE
+Text Notes 5950 3550 2    50   ~ 0
+TEMPERATURE & HUMIDITY SENSOR\n
+Wire Wire Line
+	6050 4500 5550 4500
+Text GLabel 5800 6500 2    50   Input ~ 0
+GND
+Text GLabel 5800 6700 2    50   Input ~ 0
+BUZZ
+Wire Wire Line
+	4700 6700 5800 6700
+Text Notes 5600 5700 2    50   ~ 0
+PASSIVE BUZZER
+Text GLabel 2700 7050 2    50   Input ~ 0
+5V
+Text GLabel 2700 6850 2    50   Input ~ 0
+GND
+Text GLabel 2700 6250 2    50   Input ~ 0
+LDR
+Wire Notes Line
+	6800 550  6800 7750
+Wire Notes Line
+	3650 550  3650 7700
+Wire Notes Line
+	500  5350 3600 5350
+Wire Notes Line
+	3700 5350 6750 5350
+Wire Notes Line
+	500  3200 3600 3200
+Wire Notes Line
+	3700 3200 6750 3200
+$Comp
+L fab-new:PINHD-1x07-HEADER J2
+U 1 1 5F0B41EE
+P 6000 2200
+F 0 "J2" V 6350 2350 45  0000 L CNN
+F 1 "WS2812B-HEADER" V 6450 2100 45  0000 L CNN
+F 2 "fab-1X07" H 6030 2350 20  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 2200 0    50   Input ~ 0
+5V
+Wire Wire Line
+	1000 1500 1150 1500
+$Comp
+L fab:RES-US1206FAB R1
+U 1 1 5F181422
+P 4500 1700
+F 0 "R1" H 4500 1894 45  0000 C CNN
+F 1 "0Ω" H 4500 1810 45  0000 C CNN
+F 2 "fab-R1206FAB" H 4530 1850 20  0001 C CNN
+F 3 "" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1700 4300 1700
+Wire Wire Line
+	4700 1700 4850 1700
+Wire Wire Line
+	5600 1900 6000 1900
+Wire Wire Line
+	5600 2000 6000 2000
+Wire Wire Line
+	5600 2100 6000 2100
+Wire Wire Line
+	5150 2200 5300 2200
+Wire Wire Line
+	5300 1800 5300 2200
+Wire Wire Line
+	5300 1800 6000 1800
+Connection ~ 5300 2200
+Wire Wire Line
+	5300 2200 6000 2200
+Wire Wire Line
+	6000 2300 4850 2300
+Wire Wire Line
+	4850 2300 4850 1700
+Connection ~ 4850 1700
+Wire Wire Line
+	4850 1700 6000 1700
+Wire Wire Line
+	1000 1900 1150 1900
+Wire Wire Line
+	1550 1900 2850 1900
+Text GLabel 1750 1150 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	1750 1150 2200 1150
+Wire Wire Line
+	2200 1150 2200 1500
+Wire Wire Line
+	2200 1500 2850 1500
+Wire Wire Line
+	2000 1800 2850 1800
+Wire Wire Line
+	2000 1500 2000 1800
+Wire Wire Line
+	1550 1500 2000 1500
+Wire Wire Line
+	1750 1300 2100 1300
+Wire Wire Line
+	2100 1600 2850 1600
+Wire Wire Line
+	2100 1300 2100 1600
+Wire Wire Line
+	2150 2000 2850 2000
+$Comp
+L fab:RES-US1206FAB R5
+U 1 1 5F0D70F8
+P 1950 2000
+F 0 "R5" H 1950 1800 45  0000 C CNN
+F 1 "0Ω" H 1950 1900 45  0000 C CNN
+F 2 "fab-R1206FAB" H 1980 2150 20  0001 C CNN
+F 3 "" H 1950 2000 50  0001 C CNN
+	1    1950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L fab:RES-US1206FAB R3
+U 1 1 5F0D693E
+P 1350 1900
+F 0 "R3" H 1350 2094 45  0000 C CNN
+F 1 "0Ω" H 1350 2000 45  0000 C CNN
+F 2 "fab-R1206FAB" H 1380 2050 20  0001 C CNN
+F 3 "" H 1350 1900 50  0001 C CNN
+	1    1350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L fab:RES-US1206FAB R2
+U 1 1 5F0CFF5C
+P 1350 1500
+F 0 "R2" H 1350 1694 45  0000 C CNN
+F 1 "0Ω" H 1350 1610 45  0000 C CNN
+F 2 "fab-R1206FAB" H 1380 1650 20  0001 C CNN
+F 3 "" H 1350 1500 50  0001 C CNN
+	1    1350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2300 2850 2300
+Wire Wire Line
+	2300 2200 2850 2200
+Wire Wire Line
+	2300 2100 2850 2100
+Text GLabel 2300 2300 0    50   Input ~ 0
+B
+Text GLabel 2300 2200 0    50   Input ~ 0
+G
+Text GLabel 2300 2100 0    50   Input ~ 0
+R
+$Comp
+L fab-new:PINHD-1x02-HEADER J6
+U 1 1 5E9CA6F7
+P 2850 3150
+F 0 "J6" V 3250 3550 45  0000 L CNN
+F 1 "SENSOR-5V" V 3350 3400 45  0000 L CNN
+F 2 "fab-1X02" H 2880 3300 20  0001 C CNN
+F 3 "" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2400 2850 2400
+Wire Wire Line
+	2300 1700 2850 1700
+$Comp
+L fab-new:PINHD-1x10-HEADER J4
+U 1 1 5ED8D564
+P 2850 2000
+F 0 "J4" V 3250 2050 45  0000 L CNN
+F 1 "SENSOR-HEADER" V 3350 1750 45  0000 L CNN
+F 2 "fab:fab-1X10" H 2880 2150 20  0001 C CNN
+F 3 "" H 2850 2000 50  0001 C CNN
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1700 0    50   Input ~ 0
+GND
+Text GLabel 1750 1300 0    50   Input ~ 0
+LDR
+Text GLabel 1850 2400 0    50   Input ~ 0
+BUZZ
+Text GLabel 1850 2750 0    50   Input ~ 0
+GND
+Text GLabel 1850 2650 0    50   Input ~ 0
+5V
+Text GLabel 3000 4250 2    50   Input ~ 0
+5V
+Wire Wire Line
+	1350 4250 3000 4250
+Wire Wire Line
+	1850 2650 2850 2650
+Wire Wire Line
+	1850 2750 2850 2750
+Wire Wire Line
+	4700 6500 5800 6500
+$Comp
+L fab:RES-US1206FAB R6
+U 1 1 5F1ED276
+P 2700 4550
+F 0 "R6" H 2700 4350 45  0000 C CNN
+F 1 "0Ω" H 2700 4450 45  0000 C CNN
+F 2 "fab-R1206FAB" H 2730 4700 20  0001 C CNN
+F 3 "" H 2700 4550 50  0001 C CNN
+	1    2700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4800 6050 4800
+$Comp
+L Device:Buzzer U2
+U 1 1 5F0D638D
+P 4600 6600
+F 0 "U2" H 4605 6275 50  0000 C CNN
+F 1 "PASSIVE BUZZER" H 4605 6366 50  0000 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 4575 6700 50  0001 C CNN
+F 3 "~" V 4575 6700 50  0001 C CNN
+	1    4600 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L fab:RES-US1206FAB R7
+U 1 1 5F0CC96D
+P 5550 4200
+F 0 "R7" H 5550 4000 45  0000 C CNN
+F 1 "10KΩ" H 5550 4100 45  0000 C CNN
+F 2 "fab-R1206FAB" H 5580 4350 20  0001 C CNN
+F 3 "" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3900 5550 3900
+Wire Wire Line
+	5550 4000 5550 3900
+Connection ~ 5550 3900
+Wire Wire Line
+	5550 3900 6050 3900
+Wire Wire Line
+	5550 4400 5550 4500
+Connection ~ 5550 4500
+Wire Wire Line
+	5550 4500 4850 4500
+Wire Wire Line
+	4550 3900 4550 4200
+Wire Wire Line
+	2900 4550 3000 4550
+Wire Wire Line
+	1350 4550 2500 4550
+$Comp
+L fab:RES-US1206FAB R8
+U 1 1 5F0E1C0E
+P 2150 6550
+F 0 "R8" H 2150 6350 45  0000 C CNN
+F 1 "10KΩ" H 2150 6450 45  0000 C CNN
+F 2 "fab-R1206FAB" H 2180 6700 20  0001 C CNN
+F 3 "" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 6350 2150 6250
+Connection ~ 2150 6250
+Wire Wire Line
+	2150 6250 2700 6250
+Wire Wire Line
+	2150 6750 2150 6850
+Wire Wire Line
+	2150 6850 2700 6850
+$Comp
+L Sensor_Optical:LDR07 U3
+U 1 1 5F0E885B
+P 1300 6650
+F 0 "U3" H 1370 6696 50  0000 L CNN
+F 1 "LDR07" H 1370 6605 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical" V 1475 6650 50  0001 C CNN
+F 3 "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf" H 1300 6600 50  0001 C CNN
+	1    1300 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6250 2150 6250
+Wire Wire Line
+	1300 6800 1300 7050
+Wire Wire Line
+	1300 7050 2700 7050
+Wire Wire Line
+	1300 6250 1300 6500
+Wire Wire Line
+	1550 2000 1750 2000
+Wire Wire Line
+	1000 2000 1150 2000
+$Comp
+L fab:RES-US1206FAB R4
+U 1 1 5F1BA525
+P 1350 2000
+F 0 "R4" H 1350 1800 45  0000 C CNN
+F 1 "0Ω" H 1350 1900 45  0000 C CNN
+F 2 "fab-R1206FAB" H 1380 2150 20  0001 C CNN
+F 3 "" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 5F0CCB25
+P 4550 4500
+F 0 "U1" H 4306 4546 50  0000 R CNN
+F 1 "DHT11" H 4306 4455 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 4550 4100 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4700 4750 50  0001 C CNN
+	1    4550 4500
+	1    0    0    -1  
+$EndComp
+Text Notes 2600 5700 2    50   ~ 0
+LIGHT DEPENDENT RESISTOR 
+$EndSCHEMATC
